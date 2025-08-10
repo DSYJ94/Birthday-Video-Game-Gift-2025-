@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Pea! 🎂</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <h1>Loading Pea's Birthday Adventure...</h1>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+    <div id="game-container"></div>
+    <div id="ui-overlay">
+        <div id="controls-hud">
+            <h4>Controls</h4>
+            <div class="control-item">
+                <span class="key">WASD</span>
+                <span class="desc">Move</span>
+            </div>
+            <div class="control-item">
+                <span class="key">Mouse</span>
+                <span class="desc">Look Around</span>
+            </div>
+            <div class="control-item">
+                <span class="key">E</span>
+                <span class="desc">Interact</span>
+            </div>
+            <div class="control-item">
+                <span class="key">ESC</span>
+                <span class="desc">Quit Quiz</span>
+            </div>
+        </div>
+        <div id="progress-tracker">
+            <h4>Progress</h4>
+            <div class="progress-item" id="law-progress">
+                <span class="progress-icon">⚖️</span>
+                <span class="progress-name">Law Challenge</span>
+                <span class="progress-status" id="law-status">Pending</span>
+            </div>
+            <div class="progress-item" id="knitting-progress">
+                <span class="progress-icon">🧶</span>
+                <span class="progress-name">Knitting Challenge</span>
+                <span class="progress-status" id="knitting-status">Pending</span>
+            </div>
+            <div class="progress-item" id="chest-progress">
+                <span class="progress-icon">🎁</span>
+                <span class="progress-name">Birthday Chest</span>
+                <span class="progress-status" id="chest-status">Locked</span>
+            </div>
+            <div class="audio-controls">
+                <button id="music-toggle" class="audio-btn">🎵 Music: ON</button>
+            </div>
+        </div>
+        <div id="objective-text"></div>
+        <div id="quiz-container" class="hidden"></div>
+        <div id="knitting-container" class="hidden"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
